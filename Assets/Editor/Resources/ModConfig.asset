@@ -24,6 +24,6 @@ MonoBehaviour:
 
 
     TP Supported.'
-  version: Beta
+  version: 1.
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 47dc8ca675c660046ae395613dc2b117, type: 3}
