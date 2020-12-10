@@ -88,7 +88,7 @@ public class JohnsonSolids: MonoBehaviour {
         }
 	}
 #pragma warning disable 414
-    private string TwitchHelpMessage = "use e.g. '!{0} submit J00' to submit your solid. use '!{0} press j' to press the J.";
+    private string TwitchHelpMessage = @"use e.g. '!{0} submit J00' to submit your solid. use '!{0} press j' to press the J.";
 #pragma warning restore 414
     IEnumerator ProcessTwitchCommand (string command)
     {
