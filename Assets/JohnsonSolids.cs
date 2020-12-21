@@ -30,7 +30,7 @@ public class JohnsonSolids: MonoBehaviour {
         }
         j.OnInteract += delegate { j.AddInteractionPunch(); sound.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.BigButtonPress, transform); solids[chosenSolidIndex].SetActive(!solids[chosenSolidIndex].activeSelf); return false; };
         submit.OnInteract += delegate { PressSubmit(); return false; };
-        chosenSolidIndex = rnd.Range(0, 93);
+        chosenSolidIndex = rnd.Range(0, 92);
         solids[chosenSolidIndex].SetActive(true);
         Debug.LogFormat("[Johnson Solids #{0}] The chosen solid is J{1}, which is the {2}.", moduleId, chosenSolidIndex + 1, solidNames[chosenSolidIndex]);
     }
@@ -81,7 +81,7 @@ public class JohnsonSolids: MonoBehaviour {
                 Debug.LogFormat("[Johnson Solids #{0}] That was incorrect. Strike!", moduleId);
                 module.HandleStrike();
                 solids[chosenSolidIndex].SetActive(false);
-                chosenSolidIndex = rnd.Range(0, 93);
+                chosenSolidIndex = rnd.Range(0, 92);
                 solids[chosenSolidIndex].SetActive(true);
                 Debug.LogFormat("[Johnson Solids #{0}] The chosen solid is J{1}, which is the {2}.", moduleId, chosenSolidIndex + 1, solidNames[chosenSolidIndex]);
             }
